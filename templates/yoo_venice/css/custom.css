@@ -1,0 +1,8 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+/* ========================================================================
+   Use this file to add custom CSS easily
+ ========================================================================== */
+
+.tm-features-slideshow .uk-slideshow,
+.tm-features-slideshow .uk-slideshow > li { min-height: 400px; }

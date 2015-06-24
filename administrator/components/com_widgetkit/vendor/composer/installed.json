@@ -1,0 +1,99 @@
+[
+    {
+        "name": "yootheme/framework",
+        "version": "v1.0.13",
+        "version_normalized": "1.0.13.0",
+        "source": {
+            "type": "git",
+            "url": "git@github.com:yootheme/framework.git",
+            "reference": "c0a2babb243496b3ec4733ce6b1f4759c86eaaa0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yootheme/framework/zipball/c0a2babb243496b3ec4733ce6b1f4759c86eaaa0",
+            "reference": "c0a2babb243496b3ec4733ce6b1f4759c86eaaa0",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2015-01-30 13:38:49",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-develop": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "YOOtheme\\Framework\\": "src"
+            }
+        },
+        "license": [
+            "GPL"
+        ],
+        "authors": [
+            {
+                "name": "YOOtheme",
+                "email": "info@yootheme.com"
+            }
+        ],
+        "description": "YOOtheme Framework",
+        "homepage": "http://yootheme.com",
+        "support": {
+            "source": "https://github.com/yootheme/framework/tree/v1.0.13",
+            "issues": "https://github.com/yootheme/framework/issues"
+        }
+    },
+    {
+        "name": "abeautifulsite/simpleimage",
+        "version": "2.5.3",
+        "version_normalized": "2.5.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/claviska/SimpleImage.git",
+            "reference": "a56897173e621590ecb59cd93e4bbf5bf46ae186"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/a56897173e621590ecb59cd93e4bbf5bf46ae186",
+            "reference": "a56897173e621590ecb59cd93e4bbf5bf46ae186",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2014-03-18 06:42:58",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.5-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "abeautifulsite": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nazar Mokrynskyi",
+                "email": "nazar@mokrynskyi.com",
+                "homepage": "http://cleverstyle.org/",
+                "role": "Developer"
+            },
+            {
+                "name": "Cory LaViska",
+                "homepage": "http://www.abeautifulsite.net/",
+                "role": "Developer"
+            }
+        ],
+        "description": "A PHP class that simplifies working with images"
+    }
+]

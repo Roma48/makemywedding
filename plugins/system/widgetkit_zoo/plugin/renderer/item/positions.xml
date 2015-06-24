@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renderer>
+	<positions layout="mapping">
+		<position name="title">Title</position>
+		<position name="content">Content</position>
+		<position name="media">Media</position>
+		<position name="location">Location</position>
+		<position name="link">Link</position>
+	</positions>
+</renderer>
