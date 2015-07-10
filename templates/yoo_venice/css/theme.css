@@ -8941,6 +8941,11 @@ body {
 .tm-fullscreen {
   position: relative;
 }
+
+.tm-fullscreen > p {
+    margin: 0 !important;
+}
+
 [class*='tm-fullscreen-'] {
   width: 100vw;
 }

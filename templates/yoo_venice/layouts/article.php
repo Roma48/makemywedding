@@ -14,7 +14,15 @@
     }
 ?>
 
-<?php if ($this['config']->get('article_style')=='tm-article-blog' && $this->warp['system']->application->input->get('view') == 'category' && $image) : ?>
+<?php
+    $style = '';
+    if($_REQUEST['Itemid'] == 220 || $this['config']->get('article_style')=='tm-article-blog') {
+        $style = 'tm-article-blog';
+    }
+?>
+
+<!--<h6>--><?php //echo $this['config']->get('layout'); ?><!--</h6>-->
+<?php if ($style == 'tm-article-blog' && $this->warp['system']->application->input->get('view') == 'category' && $image) : ?>
 <article class="uk-article tm-article-blog-featured-image" <?php if ($permalink) echo 'data-permalink="'.$permalink.'"'; ?>>
 
 <div class="uk-grid" data-uk-grid-match>

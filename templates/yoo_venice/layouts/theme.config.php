@@ -104,6 +104,7 @@ $body_classes  = $sidebar_classes;
 $body_classes .= $this['system']->isBlog() ? ' tm-isblog' : ' tm-noblog';
 $body_classes .= ' '.$config->get('page_class');
 $body_classes .= ' '.$config->get('article_style');
+    if ($_REQUEST['Itemid'] == 220)  $body_classes .= 'tm-article-blog';
 $body_classes .= $this['config']->get('content_padding') ? ' tm-content-padding' : '';
 $body_classes .= $this['config']->get('article_boxed') ? ' tm-content-boxed' : '';
 

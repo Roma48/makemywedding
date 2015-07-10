@@ -181,6 +181,7 @@
 			"style": "default",
 			"fixed_navigation": "1",
 			"content_padding": "1",
+            
 			"article_boxed": "1",
 			"sidebars": {
 				"sidebar-a": {

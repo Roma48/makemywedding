@@ -78,7 +78,7 @@ include($this['path']->path('layouts:theme.config.php'));
     </div>
     <?php endif; ?>
 
-    <div class="tm-wrapper" id="my">
+    <div class="tm-wrapper">
 
         <?php if ($this['widgets']->count('search')) : ?>
         <div class="tm-block tm-block-search uk-hidden-small uk-text-center">
@@ -156,7 +156,7 @@ include($this['path']->path('layouts:theme.config.php'));
             <?php endif; ?>
 
         <?php if ($this['widgets']->count('bottom-a')) : ?>
-        <div  class="tm-block tm-block-bottom-a<?php echo @$block_classes['bottom-a']; echo $display_classes['bottom-a']; ?>">
+        <div class="tm-block tm-block-bottom-a<?php echo @$block_classes['bottom-a']; echo $display_classes['bottom-a']; ?>">
             <div>
                 <div class="uk-container uk-container-center">
                     <section class="<?php echo @$grid_classes['bottom-a']; ?>" data-uk-grid-match="{target:'> div > .uk-panel'}" data-uk-grid-margin><?php echo $this['widgets']->render('bottom-a', array('layout'=>$this['config']->get('grid.bottom-a.layout'))); ?></section>
