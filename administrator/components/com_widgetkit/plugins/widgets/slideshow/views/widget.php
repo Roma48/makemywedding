@@ -178,10 +178,10 @@ $class = ($class) ? ' class="' . $class . '"' : '';
         <?php endforeach; ?>
         </ul>
 
-        <?php if ($settings['slidenav']) : ?>
-        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous uk-hidden-touch" data-uk-slideshow-item="previous"></a>
-        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next uk-hidden-touch" data-uk-slideshow-item="next"></a>
-        <?php endif; ?>
+<!--        --><?php //if ($settings['slidenav']) : ?>
+<!--        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous uk-hidden-touch" data-uk-slideshow-item="previous"></a>-->
+<!--        <a href="#" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next uk-hidden-touch" data-uk-slideshow-item="next"></a>-->
+<!--        --><?php //endif; ?>
 
     </div>
 

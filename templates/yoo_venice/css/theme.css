@@ -1,5 +1,3 @@
-/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
-
 @import 'https://fonts.googleapis.com/css?family=Droid+Serif';
 @import 'https://fonts.googleapis.com/css?family=Montserrat:400,700';
 /* ========================================================================
@@ -6458,7 +6456,7 @@ a.uk-thumbnail {
 /* Sub-object: `uk-modal-dialog`
  ========================================================================== */
 /*
- * 1. Create position context for caption, spinner and close button
+ * 1. Create position context for `uk-modal-dialog-frameless`
  * 2. Set box sizing
  * 3. Min-height needed for initial loading and spinner
  * 4. Set style
@@ -6493,7 +6491,7 @@ a.uk-thumbnail {
      */
   .uk-modal-dialog {
     width: auto;
-    margin: 10px auto;
+    margin: 10px;
   }
 }
 /*
@@ -6523,18 +6521,15 @@ a.uk-thumbnail {
 .uk-modal-dialog > .uk-close:first-child + *:not([class*='uk-modal-']) {
   margin-top: 0;
 }
-/* Modifier: `uk-modal-dialog-lightbox`
+/* Modifier: `uk-modal-dialog-frameless`
  ========================================================================== */
-.uk-modal-dialog-lightbox {
-  margin: 15px auto;
+.uk-modal-dialog-frameless {
   padding: 0;
-  max-width: 95%;
-  max-width: calc(100% - 30px);
 }
 /*
- * Close button
+ * Close in modal
  */
-.uk-modal-dialog-lightbox > .uk-close:first-child {
+.uk-modal-dialog-frameless > .uk-close:first-child {
   position: absolute;
   top: -12px;
   right: -12px;
@@ -6543,7 +6538,7 @@ a.uk-thumbnail {
 }
 /* Phone landscape and smaller */
 @media (max-width: 767px) {
-  .uk-modal-dialog-lightbox > .uk-close:first-child {
+  .uk-modal-dialog-frameless > .uk-close:first-child {
     top: -7px;
     right: -7px;
   }
@@ -6562,20 +6557,19 @@ a.uk-thumbnail {
     width: 1130px;
   }
 }
-/* Sub-Object: `uk-modal-header` and `uk-modal-footer`
+/* Sub-Object: `uk-modal-header`
  ========================================================================== */
 .uk-modal-header {
+  margin-top: 0;
   margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 30px;
 }
+/* Sub-Object: `uk-modal-footer`
+ ========================================================================== */
 .uk-modal-footer {
   margin-top: 15px;
-}
-/*
- * Remove margin from the last-child
- */
-.uk-modal-header > :last-child,
-.uk-modal-footer > :last-child {
-  margin-bottom: 0;
+  text-align: right;
 }
 /* Sub-Object: `uk-modal-caption`
  ========================================================================== */
@@ -6904,17 +6898,11 @@ a.uk-thumbnail {
   .uk-text-center-medium {
     text-align: center !important;
   }
-  .uk-text-left-medium {
-    text-align: left !important;
-  }
 }
 /* Phone landscape and smaller */
 @media (max-width: 767px) {
   .uk-text-center-small {
     text-align: center !important;
-  }
-  .uk-text-left-small {
-    text-align: left !important;
   }
 }
 /* Wrap modifiers
@@ -7396,7 +7384,7 @@ a.uk-thumbnail {
 /* Hide on touch */
 .uk-touch .uk-hidden-touch,
 .uk-notouch .uk-hidden-notouch {
-  display: none !important;
+  display: none;
 }
 .uk-link-muted,
 .uk-link-muted a {
@@ -7936,7 +7924,7 @@ a.uk-thumbnail {
   }
 }
 /* ========================================================================
-   Component: Caption
+   Addon: Caption
  ========================================================================== */
 /*
  * 1. Hide by default
@@ -8031,7 +8019,7 @@ a.uk-thumbnail {
   background: rgba(0, 0, 0, 0.2);
 }
 /* ========================================================================
-   Component: Slideshow
+   Addon: Slideshow
  ========================================================================== */
 /*
  * 1. Create position context
@@ -8168,43 +8156,6 @@ a.uk-thumbnail {
   background: rgba(0, 0, 0, 0.6);
   -webkit-animation: uk-fade 0.5s ease-in-out reverse;
   animation: uk-fade 0.5s ease-in-out reverse;
-}
-/* ========================================================================
-   Component: Accordion
- ========================================================================== */
-/* Sub-object: `uk-accordion-title`
- ========================================================================== */
-.uk-accordion-title {
-  margin-top: 0;
-  margin-bottom: 15px;
-  padding: 5px 15px;
-  background: #f7f7f7;
-  font-size: 19px;
-  line-height: 25px;
-  cursor: pointer;
-  border: 2px solid #444444;
-}
-/* Sub-object: `uk-accordion-content`
- ========================================================================== */
-.uk-accordion-content {
-  padding: 0 15px 15px 15px;
-}
-/*
- * Micro clearfix to make panels more robust
- */
-.uk-accordion-content:before,
-.uk-accordion-content:after {
-  content: "";
-  display: table;
-}
-.uk-accordion-content:after {
-  clear: both;
-}
-/*
- * Remove margin from the last-child
- */
-.uk-accordion-content > :last-child {
-  margin-bottom: 0;
 }
 /* ========================================================================
    Component: Search
@@ -8566,7 +8517,7 @@ body {
 }
 /* Block Image */
 .tm-block.tm-block-image {
-  background: transparent url('../images/default/block_image/bg.jpg') 50% 50% no-repeat;
+  background: transparent url("../images/default/block_image/bg.jpg") 50% 50% no-repeat;
   background-size: cover;
 }
 .uk-notouch .tm-block.tm-block-image {
@@ -8941,11 +8892,6 @@ body {
 .tm-fullscreen {
   position: relative;
 }
-
-.tm-fullscreen > p {
-    margin: 0 !important;
-}
-
 [class*='tm-fullscreen-'] {
   width: 100vw;
 }
@@ -8956,7 +8902,7 @@ body {
  * Image and Video touchscreen fallback
  */
 .tm-fullscreen-image .uk-cover-background {
-  background-image: url('../images/default/home_fullscreen_image.jpg');
+  background-image: url("../images/default/home_fullscreen_image.jpg");
 }
 /*
  * Cover Content
@@ -8970,15 +8916,15 @@ body {
     height: 600px;
     width: 600px;
     padding: 0;
-    background: url('../images/default/home_fullscreen_content.svg') 50% 50% no-repeat;
+    background: url("../images/default/home_fullscreen_content.svg") 50% 50% no-repeat;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
   .tm-cover-content.tm-cover-content-2 {
-    background-image: url('../images/home_fullscreen_content_02.svg');
+    background-image: url("../images/home_fullscreen_content_02.svg");
   }
   .tm-cover-content.tm-cover-content-3 {
-    background-image: url('../images/home_fullscreen_content_03.svg');
+    background-image: url("../images/home_fullscreen_content_03.svg");
   }
 }
 .tm-cover-content h1,
@@ -9110,8 +9056,8 @@ body {
 /* Custom YOOtheme logo font for icons */
 @font-face {
   font-family: 'yootheme';
-  src: url('../fonts/yootheme.eot?w5n8lw');
-  src: url('../fonts/yootheme.eot?#iefixw5n8lw') format('embedded-opentype'), url('../fonts/yootheme.woff?w5n8lw') format('woff'), url('../fonts/yootheme.ttf?w5n8lw') format('truetype'), url('../fonts/yootheme.svg?w5n8lw#yootheme') format('svg');
+  src: url("../fonts/yootheme.eot?w5n8lw");
+  src: url("../fonts/yootheme.eot?#iefixw5n8lw") format('embedded-opentype'), url("../fonts/yootheme.woff?w5n8lw") format('woff'), url("../fonts/yootheme.ttf?w5n8lw") format('truetype'), url("../fonts/yootheme.svg?w5n8lw#yootheme") format('svg');
   font-weight: normal;
   font-style: normal;
 }
